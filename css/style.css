@@ -96,6 +96,7 @@ html {
     scroll-behavior: smooth;
     font-size: 16px;
     scroll-padding-top: var(--nav-height);
+    overflow-x: hidden;
 }
 
 body {
@@ -105,6 +106,7 @@ body {
     color: var(--chocolate);
     background: var(--cream);
     overflow-x: hidden;
+    max-width: 100vw;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -550,8 +552,11 @@ img {
 .hero-image::before {
     content: '';
     position: absolute;
-    width: 95%;
-    aspect-ratio: 1;
+    width: 400px;
+    height: 400px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     border: 2px dashed var(--caramel);
     border-radius: 50%;
     opacity: 0.4;
@@ -559,8 +564,8 @@ img {
 }
 
 @keyframes rotate-slow {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
+    from { transform: translate(-50%, -50%) rotate(0deg); }
+    to { transform: translate(-50%, -50%) rotate(360deg); }
 }
 
 .chef-profile-photo {
@@ -1442,7 +1447,7 @@ section {
     
     .hero-content {
         grid-template-columns: 1fr;
-        gap: var(--space-xl);
+        gap: var(--space-lg);
         text-align: center;
     }
     
@@ -1453,6 +1458,16 @@ section {
     
     .hero-image {
         order: 1;
+        flex-direction: column;
+        overflow: visible;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .chef-profile-photo {
+        margin: 0 auto;
     }
     
     .hero-subtitle {
@@ -1472,16 +1487,38 @@ section {
         text-align: center;
     }
     
+    /* Reposition hero chips for mobile - show below the image */
+    .hero-image {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: var(--space-sm);
+    }
+    
     .hero-chip,
     .hero-chip.secondary {
-        position: relative;
-        top: auto;
-        bottom: auto;
-        left: auto;
-        right: auto;
-        display: inline-block;
-        margin: var(--space-xs);
+        position: static;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
         transform: none;
+        animation: none;
+        max-width: 90%;
+        font-size: 0.8rem;
+        padding: 10px 14px;
+        text-align: center;
+    }
+    
+    .hero-chip.secondary {
+        background: var(--gradient-warm);
+        color: white;
+    }
+    
+    /* Center the decorative ring - smaller on tablet */
+    .hero-image::before {
+        width: 350px;
+        height: 350px;
     }
     
     .about-content,
@@ -1560,33 +1597,91 @@ section {
     .hero {
         padding-top: calc(var(--nav-height) + var(--space-lg));
         padding-bottom: var(--space-xl);
+        overflow-x: hidden;
+    }
+    
+    .hero-content {
+        gap: var(--space-md);
+    }
+    
+    .hero-image {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .hero-image::before {
+        width: 280px;
+        height: 280px;
     }
     
     .hero-title {
-        font-size: 2.25rem;
+        font-size: 2rem;
     }
     
     .hero-subtitle {
-        font-size: 1rem;
+        font-size: 0.95rem;
+        padding: 0 var(--space-xs);
     }
     
     .chef-profile-photo {
-        max-width: 300px;
+        max-width: 260px;
     }
     
     .pill {
-        font-size: 0.8rem;
-        padding: 8px 14px;
+        font-size: 0.75rem;
+        padding: 8px 12px;
+        text-align: center;
+        max-width: 100%;
+        line-height: 1.4;
+    }
+    
+    /* Smaller chips on mobile */
+    .hero-chip,
+    .hero-chip.secondary {
+        font-size: 0.75rem;
+        padding: 8px 12px;
     }
     
     .btn {
         width: 100%;
         max-width: 280px;
-        padding: 16px 24px;
+        padding: 14px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .hero-meta {
+        padding: 0 var(--space-xs);
+    }
+    
+    .meta-card {
+        padding: var(--space-sm);
+    }
+    
+    .meta-card h4 {
+        font-size: 1rem;
+    }
+    
+    .meta-card span {
+        font-size: 0.8rem;
     }
     
     .section-title {
-        font-size: 1.75rem;
+        font-size: 1.6rem;
+    }
+    
+    .section-subtitle {
+        font-size: 0.95rem;
+        padding: 0 var(--space-xs);
     }
     
     .portfolio-grid,
@@ -1621,12 +1716,37 @@ section {
         padding: var(--space-md);
     }
     
+    .expertise-item {
+        padding: var(--space-sm);
+    }
+    
+    .service-card {
+        padding: var(--space-md);
+    }
+    
+    .testimonial-card {
+        padding: var(--space-md);
+    }
+    
+    .contact-item h3 {
+        font-size: 1.25rem;
+    }
+    
     /* Form touch-friendly sizing */
     .form-group input,
     .form-group select,
     .form-group textarea {
         font-size: 16px; /* Prevents iOS zoom */
         padding: 16px;
+    }
+    
+    /* Footer mobile */
+    .footer-logo h3 {
+        font-size: 1.5rem;
+    }
+    
+    .footer-logo p {
+        font-size: 0.85rem;
     }
 }
 
