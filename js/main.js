@@ -581,6 +581,24 @@ function preloadAssets() {
             profileImg.classList.add('loaded');
         });
     }
+
+    // Handle gallery image loading
+    const galleryImages = document.querySelectorAll('.gallery-item img');
+    galleryImages.forEach(img => {
+        if (img.complete) {
+            // Image already loaded
+            img.parentElement.classList.add('loaded');
+        } else {
+            // Wait for image to load
+            img.addEventListener('load', () => {
+                img.parentElement.classList.add('loaded');
+            });
+            // Handle loading errors
+            img.addEventListener('error', () => {
+                img.parentElement.classList.add('loaded');
+            });
+        }
+    });
 }
 
 // ==========================================================================
