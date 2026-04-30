@@ -1,392 +1,424 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
-    <meta name="theme-color" content="#c45e3e">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <meta name="apple-mobile-web-app-title" content="Sugar Coated Dreams">
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Chef Roshan Rakitha · Pastry, OBLU Maldives</title>
+  <meta name="description" content="Showpieces, mirror-glaze entremets, and celebration cakes by Chef Roshan Rakitha — built for the moment a guest walks into the room and stops."/>
 
-    <!-- Favicon - Sri Lankan Flag -->
-    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
-    <link rel="icon" type="image/png" href="https://flagcdn.com/32x24/lk.png" sizes="32x24">
-    <link rel="apple-touch-icon" href="https://flagcdn.com/64x48/lk.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://flagcdn.com/32x24/lk.png"/>
+  <link rel="icon" type="image/png" sizes="64x64" href="https://flagcdn.com/64x48/lk.png"/>
+  <link rel="apple-touch-icon" href="https://flagcdn.com/256x192/lk.png"/>
 
-    <title>Sugar Coated Dreams by Roshan Rakitha | Luxury Dessert Catering</title>
-    <meta name="description"
-        content="Experience the art of celebration with Chef Roshan Rakitha. Bespoke wedding cakes, birthday desserts, and immersive sweet experiences crafted with French technique and heartfelt passion.">
-    <meta name="keywords"
-        content="party chef, wedding cakes, dessert catering, custom cakes, birthday desserts, event catering">
-
-    <!-- Open Graph -->
-    <meta property="og:title" content="Sugar Coated Dreams by Roshan Rakitha">
-    <meta property="og:description" content="Bespoke dessert experiences for your most cherished celebrations.">
-    <meta property="og:type" content="website">
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=Dancing+Script:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-
-    <!-- Styles -->
-    <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Caveat:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
 </head>
-
-<body>
-    <!-- Scroll Progress Indicator -->
-    <div class="scroll-progress" aria-hidden="true"></div>
-
-    <!-- Skip Link for Accessibility -->
-    <a href="#main-content" class="sr-only">Skip to main content</a>
-
-    <!-- Navigation -->
-    <nav class="navbar" role="navigation" aria-label="Main navigation">
-        <div class="container nav-container">
-            <a href="#hero" class="nav-logo" aria-label="Sugar Coated Dreams - Home">
-                <h2>Sugar Coated Dreams</h2>
-                <span class="nav-subtitle">by Roshan Rakitha</span>
-            </a>
-
-            <div class="nav-menu" id="nav-menu" role="menubar">
-                <a href="#hero" class="nav-link active" role="menuitem">Home</a>
-                <a href="#about" class="nav-link" role="menuitem">About</a>
-                <a href="#portfolio" class="nav-link" role="menuitem">Creations</a>
-                <a href="#services" class="nav-link" role="menuitem">Services</a>
-                <a href="#gallery" class="nav-link" role="menuitem">Gallery</a>
-                <a href="#testimonials" class="nav-link" role="menuitem">Stories</a>
-                <a href="#contact" class="nav-link" role="menuitem">Contact</a>
-            </div>
-
-            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false"
-                aria-controls="nav-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
+<body id="top">
+  <!-- NAV -->
+  <header class="nav">
+    <a class="nav-mark" href="#top" data-nav="home">
+      <span class="nav-mark-script">Chef</span>
+      <span class="nav-mark-name">Roshan Rakitha<small>OBLU · Maldives</small></span>
+    </a>
+    <nav class="nav-links">
+      <a class="nav-link is-active" href="#top" data-nav="home">Home</a>
+      <a class="nav-link" href="#portfolio" data-nav="portfolio">Portfolio</a>
+      <a class="nav-link" href="#services" data-nav="services">Services</a>
+      <a class="nav-link" href="#about" data-nav="about">About</a>
+      <a class="btn btn-primary nav-cta" href="#contact" data-nav="contact">Commission a piece</a>
     </nav>
+  </header>
 
-    <!-- Main Content -->
-    <main id="main-content">
-        <!-- Hero Section -->
-        <section id="hero" class="hero">
-            <div class="container hero-content">
-                <div class="hero-text" data-animate>
-                    <span class="pill">
-                        <i aria-hidden="true"></i>
-                        Award-Winning Executive Pastry Chef with International Experience
-                    </span>
+  <!-- HERO -->
+  <section class="hero">
+    <span class="hero-confetti hero-c1"></span>
+    <span class="hero-confetti hero-c2"></span>
+    <span class="hero-confetti hero-c3"></span>
+    <span class="hero-confetti hero-c4"></span>
+    <span class="hero-confetti hero-c5"></span>
 
-                    <h1 class="hero-title">
-                        Sugar Coated Dreams
-                        <strong>by Roshan Rakitha</strong>
-                    </h1>
-
-                    <p class="hero-subtitle">
-                        As an Executive Pastry Chef, I bring a vibrant and passionate approach to the art of pastry. My
-                        focus is on combining robust organizational skills with a collaborative spirit to drive team
-                        success and deliver culinary excellence.
-                        <br><br>With a wealth of experience in diverse, high-end environments, I pride myself on an
-                        articulate and engaging communication style that builds strong connections with both my team and
-                        my guests. Whether I am designing award-winning wedding cakes or managing complex pastry
-                        operations, I am dedicated to pushing the boundaries of creativity and quality.
-                    </p>
-
-                    <div class="hero-buttons">
-                        <a href="#portfolio" class="btn btn-primary">
-                            Explore Creations
-                        </a>
-                    </div>
-                </div>
-
-                <div class="hero-image" data-animate="scale" style="--reveal-delay: 100ms">
-                    <img src="images/profile-photo.png"
-                        alt="Chef Roshan Rakitha in professional white chef uniform and toque"
-                        class="chef-profile-photo" loading="eager" fetchpriority="high">
-                    <!-- Desktop: Text chips -->
-                    <div class="hero-chip desktop-only" data-animate style="--reveal-delay: 400ms">
-                        ✨ Live torching & tableside plating
-                    </div>
-                    <div class="hero-chip secondary desktop-only" data-animate style="--reveal-delay: 500ms">
-                        🌿 Gluten-free & vegan options
-                    </div>
-                    <!-- Mobile: Orbiting dessert emojis -->
-                    <div class="orbit-container mobile-only">
-                        <span class="orbit-item" style="--orbit-delay: 0s;">🎂</span>
-                        <span class="orbit-item" style="--orbit-delay: -1.5s;">🧁</span>
-                        <span class="orbit-item" style="--orbit-delay: -3s;">🥐</span>
-                        <span class="orbit-item" style="--orbit-delay: -4.5s;">🍰</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="about">
-            <div class="floral-accent top-right" aria-hidden="true">🌸</div>
-            <div class="recipe-note" style="top: 12%; right: 6%;" aria-hidden="true">Fresh ingredients, pure love</div>
-
-            <div class="container">
-                <header class="section-header" data-animate>
-                    <h2 class="section-title">From My Kitchen to Your Heart</h2>
-                    <p class="section-subtitle">
-                        A passion for pastry that began in my family's kitchen,
-                        now shared with yours.
-                    </p>
-                </header>
-
-                <div class="about-content">
-                    <div class="about-text">
-                        <div class="story-content" data-animate style="--reveal-delay: 100ms">
-                            <h3>How It All Began</h3>
-                            <p>
-                                Growing up, our kitchen was always the heart of celebrations. I'd watch
-                                my mother transform simple ingredients into moments of pure joy. That's
-                                when I fell in love with the magic of pastry—the way a perfectly timed
-                                crème brûlée crack could make everyone gasp with delight.
-                            </p>
-
-                            <h3>My Kitchen Philosophy</h3>
-                            <p>
-                                I believe desserts should tell stories. That's why I combine classical
-                                French technique with vibrant flavors I grew up with—think pandan cloud
-                                cakes alongside gold leaf croquembouches, or smoked vanilla pavlovas
-                                with tropical compotes. Every bite is crafted to evoke emotion.
-                            </p>
-
-                            <h3>My Promise to You</h3>
-                            <p>
-                                Your celebration deserves more than just desserts—it deserves an experience.
-                                I create immersive dessert moments that become the stories your guests
-                                retell for years. From intimate gatherings to grand celebrations, every
-                                detail is handled with the warmth of a home kitchen.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- Gallery Section -->
-        <section id="gallery" class="gallery">
-            <div class="container">
-                <header class="section-header" data-animate>
-                    <h2 class="section-title">Culinary Artistry</h2>
-                    <p class="section-subtitle">A glimpse into my world of sweet creations</p>
-                </header>
-
-                <div class="gallery-grid">
-                    <div class="gallery-item large" data-animate style="--reveal-delay: 0ms">
-                        <img src="images/1.jpg" alt="Featured dessert creation" loading="lazy">
-                    </div>
-                    <div class="gallery-item" data-animate="scale" style="--reveal-delay: 60ms">
-                        <img src="images/2.jpg" alt="Pastry detail" loading="lazy">
-                    </div>
-                    <div class="gallery-item" data-animate="scale" style="--reveal-delay: 120ms">
-                        <img src="images/3.jpg" alt="Cake decoration" loading="lazy">
-                    </div>
-                    <div class="gallery-item" data-animate="scale" style="--reveal-delay: 180ms">
-                        <img src="images/4.jpg" alt="Sweet treats" loading="lazy">
-                    </div>
-                    <div class="gallery-item" data-animate="scale" style="--reveal-delay: 240ms">
-                        <img src="images/5.jpeg" alt="Event setup" loading="lazy">
-                    </div>
-                    <div class="gallery-item wide" data-animate style="--reveal-delay: 300ms">
-                        <img src="images/6.jpeg" alt="Dessert spread" loading="lazy">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Testimonials Section -->
-        <section id="testimonials" class="testimonials">
-            <div class="container">
-                <header class="section-header" data-animate>
-                    <h2 class="section-title">Sweet Stories</h2>
-                    <p class="section-subtitle">Kind words from hosts, planners, and guests who tasted the love.</p>
-                </header>
-
-                <div class="testimonials-grid">
-                    <article class="testimonial-card" data-animate style="--reveal-delay: 0ms">
-                        <div class="testimonial-content">
-                            <p>
-                                "Chef Roshan staged our anniversary like a film—smoke swirling around
-                                brûléed mango, rose petals on the linen, and a cake that shimmered
-                                under candlelight. Pure magic."
-                            </p>
-                        </div>
-                        <footer class="testimonial-author">
-                            <div class="author-info">
-                                <h4>Sarah & James</h4>
-                                <span>Anniversary Celebration</span>
-                            </div>
-                        </footer>
-                    </article>
-
-                    <article class="testimonial-card" data-animate style="--reveal-delay: 100ms">
-                        <div class="testimonial-content">
-                            <p>
-                                "For our brand launch, he built a dessert bar in our exact palette and
-                                plated live for VIPs. It was the most photographed corner of the night.
-                                Absolutely exceeded expectations."
-                            </p>
-                        </div>
-                        <footer class="testimonial-author">
-                            <div class="author-info">
-                                <h4>Michael Chen</h4>
-                                <span>Corporate Event Director</span>
-                            </div>
-                        </footer>
-                    </article>
-
-                    <article class="testimonial-card" data-animate style="--reveal-delay: 200ms">
-                        <div class="testimonial-content">
-                            <p>
-                                "My daughter's princess cake made her cry happy tears. Chef Roshan
-                                understood exactly what we wanted and delivered something beyond
-                                our wildest dreams."
-                            </p>
-                        </div>
-                        <footer class="testimonial-author">
-                            <div class="author-info">
-                                <h4>Emily Rodriguez</h4>
-                                <span>Birthday Party Host</span>
-                            </div>
-                        </footer>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="contact">
-            <div class="floral-accent top-left" aria-hidden="true">💌</div>
-            <div class="recipe-note" style="top: 20%; left: 4%;" aria-hidden="true">Let's create something beautiful
-            </div>
-
-            <div class="container">
-                <header class="section-header" data-animate>
-                    <h2 class="section-title">Let's Create Something Sweet Together</h2>
-                    <p class="section-subtitle">
-                        Tell me about your celebration—I'll craft desserts that capture its
-                        spirit and make it unforgettable.
-                    </p>
-                </header>
-
-                <div class="contact-content">
-                    <div class="contact-info" data-animate="left">
-                        <div class="contact-item">
-                            <h3>Let's Plan Your Sweet Moment</h3>
-                            <p>
-                                Whether it's an intimate gathering or a grand celebration, every menu
-                                is created just for you. Share your vision, your favorite flavors, and
-                                the feeling you want to create—I'll handle the rest with care.
-                            </p>
-                            <div class="contact-details">
-                                <p><strong>Email:</strong> hello@sugarcoateddreams.com</p>
-                                <p><strong>Phone:</strong> (123) 456-7890</p>
-                                <p><strong>Location:</strong> Serving your venue + destination events</p>
-                            </div>
-                        </div>
-
-                        <div class="social-links">
-                            <a href="#" class="social-link" aria-label="Follow on Instagram">Instagram</a>
-                            <a href="#" class="social-link" aria-label="Follow on Facebook">Facebook</a>
-                            <a href="#" class="social-link" aria-label="Connect on LinkedIn">LinkedIn</a>
-                        </div>
-                    </div>
-
-                    <div class="contact-form" data-animate="right" style="--reveal-delay: 150ms">
-                        <form id="contactForm" novalidate>
-                            <div class="form-group">
-                                <label for="name">Your Name</label>
-                                <input type="text" id="name" name="name" placeholder="How should I address you?"
-                                    required autocomplete="name">
-                            </div>
-
-                            <div class="form-group">
-                                <label for="email">Email Address</label>
-                                <input type="email" id="email" name="email" placeholder="Where can I reach you?"
-                                    required autocomplete="email">
-                            </div>
-
-                            <div class="form-group">
-                                <label for="phone">Phone Number</label>
-                                <input type="tel" id="phone" name="phone" placeholder="For quick follow-ups (optional)"
-                                    autocomplete="tel">
-                            </div>
-
-                            <div class="form-group">
-                                <label for="service">Celebration Type</label>
-                                <select id="service" name="service" required>
-                                    <option value="">What are we celebrating?</option>
-                                    <option value="wedding">Wedding</option>
-                                    <option value="birthday">Birthday Party</option>
-                                    <option value="corporate">Corporate Event</option>
-                                    <option value="baby-shower">Baby Shower</option>
-                                    <option value="anniversary">Anniversary</option>
-                                    <option value="other">Other Special Occasion</option>
-                                </select>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="message">Tell Me About Your Vision</label>
-                                <textarea id="message" name="message"
-                                    placeholder="Describe your dream celebration, guest count, date, and any flavor preferences..."
-                                    rows="5" required></textarea>
-                            </div>
-
-                            <button type="submit" class="btn btn-primary">
-                                Send Message
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer" role="contentinfo">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <h3>Sugar Coated Dreams</h3>
-                    <p>Pastry atelier by Roshan Rakitha • crafting couture desserts since 2020</p>
-                </div>
-
-                <nav class="footer-links" aria-label="Footer navigation">
-                    <a href="#about">About</a>
-                    <a href="#portfolio">Creations</a>
-                    <a href="#services">Services</a>
-                    <a href="#contact">Contact</a>
-                </nav>
-
-                <div class="footer-social" aria-label="Social media links">
-                    <a href="#" aria-label="Instagram">📷</a>
-                    <a href="#" aria-label="Facebook">📘</a>
-                    <a href="#" aria-label="LinkedIn">💼</a>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p>&copy; 2025 Sugar Coated Dreams by Roshan Rakitha. All rights reserved.</p>
-            </div>
+    <div class="hero-grid">
+      <div class="hero-content">
+        <p class="eyebrow hero-eyebrow">Pastry Chef · OBLU Maldives</p>
+        <h1 class="hero-title">
+          Sugar,<br/>
+          <em>spun</em> into <span class="script-word">stories</span>.
+        </h1>
+        <p class="hero-lead">
+          Showpieces, mirror-glaze entremets, and celebration cakes —
+          built for the moment a guest walks into the room and stops.
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#contact" data-nav="contact">
+            Commission a piece <i class="ph-thin ph-arrow-up-right btn-icon"></i>
+          </a>
+          <a class="btn btn-ghost" href="#portfolio" data-nav="portfolio">
+            See the work →
+          </a>
         </div>
-    </footer>
 
-    <!-- Back to Top Button -->
-    <button class="back-to-top" id="backToTop" aria-label="Scroll to top">
-        ↑
-    </button>
+        <div class="hero-stats">
+          <div class="hero-stat"><div class="num">200+</div><div class="lab">Showpieces<br/>delivered</div></div>
+          <div class="hero-stat"><div class="num">8</div><div class="lab">Years on the<br/>pass</div></div>
+          <div class="hero-stat"><div class="num">∞</div><div class="lab">Hours of<br/>tempering</div></div>
+        </div>
+      </div>
 
-    <!-- Scripts -->
-    <script src="js/main.js"></script>
+      <div class="hero-collage">
+        <div class="hero-img hero-img-1">
+          <img src="images/1.jpg" alt="Snowflake showpiece"/>
+        </div>
+        <div class="hero-img hero-img-2">
+          <img src="images/4.jpg" alt="Pistachio macarons"/>
+        </div>
+        <div class="hero-img hero-img-3">
+          <img src="images/3.jpg" alt="Wonka chocolate egg"/>
+        </div>
+        <div class="hero-img hero-img-4">
+          <img src="images/6.jpeg" alt="Blue gingerbread house"/>
+        </div>
+        <div class="hero-sticker">made<br/>by hand</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <div class="marquee-item">
+        <span>Showpieces</span><span class="marquee-dot l"></span>
+        <span><em>celebration cakes</em></span><span class="marquee-dot"></span>
+        <span>Mirror-glaze</span><span class="marquee-dot t"></span>
+        <span><em>chocolaterie</em></span><span class="marquee-dot"></span>
+        <span>Macarons</span><span class="marquee-dot p"></span>
+        <span><em>sugar art</em></span><span class="marquee-dot"></span>
+        <span>Buffet design</span><span class="marquee-dot"></span>
+      </div>
+      <div class="marquee-item">
+        <span>Showpieces</span><span class="marquee-dot l"></span>
+        <span><em>celebration cakes</em></span><span class="marquee-dot"></span>
+        <span>Mirror-glaze</span><span class="marquee-dot t"></span>
+        <span><em>chocolaterie</em></span><span class="marquee-dot"></span>
+        <span>Macarons</span><span class="marquee-dot p"></span>
+        <span><em>sugar art</em></span><span class="marquee-dot"></span>
+        <span>Buffet design</span><span class="marquee-dot"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <div class="about-grid">
+      <div class="about-portrait">
+        <span class="tape"></span>
+        <img src="images/profile-photo.png" alt="Chef Roshan Rakitha"/>
+        <span class="about-portrait-cap">— Chef Roshan</span>
+      </div>
+
+      <div class="about-text">
+        <span class="eyebrow about-eyebrow">A pastry chef in the Maldives</span>
+        <h2 class="about-title">
+          I build pastries that <span class="script">make</span> a room <em>turn</em>.
+        </h2>
+        <p class="lead">
+          For nearly a decade I've worked the pastry pass — most recently
+          at OBLU Maldives, where every Christmas buffet, every wedding,
+          every guest arrival is a chance to make something the camera
+          can't resist.
+        </p>
+        <p>
+          What I love is the moment someone walks in and stops mid-sentence.
+          That's the whole job — that pause. Snowflake spheres, mirror-glaze
+          domes, fondant Santas with reading glasses, a guitar made of
+          chocolate. Each piece is a small, edible event.
+        </p>
+
+        <div class="about-meta">
+          <div class="meta-pill b1"><div class="num">12</div><div class="lab">competition<br/>medals</div></div>
+          <div class="meta-pill b2"><div class="num">2024</div><div class="lab">OBLU<br/>head pastry</div></div>
+          <div class="meta-pill b3"><div class="num">5★</div><div class="lab">resort<br/>experience</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio" class="portfolio">
+    <div class="portfolio-head">
+      <div>
+        <p class="eyebrow">A small archive of recent work</p>
+        <h2>The <span class="script">work</span>, <em>up close</em>.</h2>
+      </div>
+      <p>Twelve recent pieces — from a Wonka-themed banquet to a snowflake competition showpiece. Click any image for the story behind it.</p>
+    </div>
+
+    <div class="portfolio-filters" id="pf-filters">
+      <button class="pf-filter is-active" data-filter="All">All</button>
+      <button class="pf-filter" data-filter="Showpiece">Showpiece</button>
+      <button class="pf-filter" data-filter="Character">Character</button>
+      <button class="pf-filter" data-filter="Themed">Themed</button>
+      <button class="pf-filter" data-filter="Petits">Petits</button>
+      <button class="pf-filter" data-filter="Buffet">Buffet</button>
+    </div>
+
+    <div class="portfolio-grid" id="pf-grid">
+      <button class="pf-card size-feature" data-cat="Showpiece" data-title="Snowflake sphere" data-img="images/1.jpg">
+        <img src="images/1.jpg" alt="Snowflake sphere"/>
+        <div class="pf-meta">
+          <div><div class="pf-cat">Showpiece</div><div class="pf-title">Snowflake sphere</div></div>
+          <div class="pf-arrow"><i class="ph-thin ph-arrow-up-right"></i></div>
+        </div>
+      </button>
+      <button class="pf-card size-lg" data-cat="Themed" data-title="1OAK guitar" data-img="images/2.jpg">
+        <img src="images/2.jpg" alt="1OAK guitar"/>
+        <div class="pf-meta">
+          <div><div class="pf-cat">Themed</div><div class="pf-title">1OAK guitar</div></div>
+          <div class="pf-arrow"><i class="ph-thin ph-arrow-up-right"></i></div>
+        </div>
+      </button>
+      <button class="pf-card size-sq" data-cat="Themed" data-title="Wonka golden egg" data-img="images/3.jpg">
+        <img src="images/3.jpg" alt="Wonka golden egg"/>
+        <div class="pf-meta">
+          <div><div class="pf-cat">Themed</div><div class="pf-title">Wonka golden egg</div></div>
+          <div class="pf-arrow"><i class="ph-thin ph-arrow-up-right"></i></div>
+        </div>
+      </button>
+      <button class="pf-card size-sq" data-cat="Petits" data-title="Pistachio macarons" data-img="images/4.jpg">
+        <img src="images/4.jpg" alt="Pistachio macarons"/>
+        <div class="pf-meta">
+          <div><div class="pf-cat">Petits</div><div class="pf-title">Pistachio macarons</div></div>
+          <div class="pf-arrow"><i class="ph-thin ph-arrow-up-right"></i></div>
+        </div>
+      </button>
+      <button class="pf-card size-wide" data-cat="Buffet" data-title="Christmas buffet" data-img="images/5.jpeg">
+        <img src="images/5.jpeg" alt="Christmas buffet"/>
+        <div class="pf-meta">
+          <div><div class="pf-cat">Buffet</div><div class="pf-title">Christmas buffet</div></div>
+          <div class="pf-arrow"><i class="ph-thin ph-arrow-up-right"></i></div>
+        </div>
+      </button>
+      <button class="pf-card size-sq" data-cat="Character" data-title="Blue snow house" data-img="images/6.jpeg">
+        <img src="images/6.jpeg" alt="Blue snow house"/>
+        <div class="pf-meta">
+          <div><div class="pf-cat">Character</div><div class="pf-title">Blue snow house</div></div>
+          <div class="pf-arrow"><i class="ph-thin ph-arrow-up-right"></i></div>
+        </div>
+      </button>
+      <button class="pf-card size-sq" data-cat="Character" data-title="Yellow stag" data-img="images/7.jpeg">
+        <img src="images/7.jpeg" alt="Yellow stag"/>
+        <div class="pf-meta">
+          <div><div class="pf-cat">Character</div><div class="pf-title">Yellow stag</div></div>
+          <div class="pf-arrow"><i class="ph-thin ph-arrow-up-right"></i></div>
+        </div>
+      </button>
+      <button class="pf-card size-sq" data-cat="Showpiece" data-title="Crimson ribbon bow" data-img="images/8.jpeg">
+        <img src="images/8.jpeg" alt="Crimson ribbon bow"/>
+        <div class="pf-meta">
+          <div><div class="pf-cat">Showpiece</div><div class="pf-title">Crimson ribbon bow</div></div>
+          <div class="pf-arrow"><i class="ph-thin ph-arrow-up-right"></i></div>
+        </div>
+      </button>
+      <button class="pf-card size-sq" data-cat="Character" data-title="Santa &amp; penguin" data-img="images/9.jpeg">
+        <img src="images/9.jpeg" alt="Santa and penguin"/>
+        <div class="pf-meta">
+          <div><div class="pf-cat">Character</div><div class="pf-title">Santa &amp; penguin</div></div>
+          <div class="pf-arrow"><i class="ph-thin ph-arrow-up-right"></i></div>
+        </div>
+      </button>
+      <button class="pf-card size-sq" data-cat="Character" data-title="Green candle pine" data-img="images/10.jpeg">
+        <img src="images/10.jpeg" alt="Green candle pine"/>
+        <div class="pf-meta">
+          <div><div class="pf-cat">Character</div><div class="pf-title">Green candle pine</div></div>
+          <div class="pf-arrow"><i class="ph-thin ph-arrow-up-right"></i></div>
+        </div>
+      </button>
+      <button class="pf-card size-half" data-cat="Character" data-title="Fireplace cake" data-img="images/11.jpeg">
+        <img src="images/11.jpeg" alt="Fireplace cake"/>
+        <div class="pf-meta">
+          <div><div class="pf-cat">Character</div><div class="pf-title">Fireplace cake</div></div>
+          <div class="pf-arrow"><i class="ph-thin ph-arrow-up-right"></i></div>
+        </div>
+      </button>
+      <button class="pf-card size-half" data-cat="Character" data-title="Carousel" data-img="images/17.jpeg">
+        <img src="images/17.jpeg" alt="Carousel cake"/>
+        <div class="pf-meta">
+          <div><div class="pf-cat">Character</div><div class="pf-title">Carousel</div></div>
+          <div class="pf-arrow"><i class="ph-thin ph-arrow-up-right"></i></div>
+        </div>
+      </button>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="services">
+    <div class="services-head">
+      <p class="eyebrow">What the kitchen offers</p>
+      <h2>Four ways to <span class="script">order</span> something <em>unforgettable</em>.</h2>
+    </div>
+
+    <div class="services-grid">
+      <article class="service-card tone-lemon">
+        <div class="service-num">01</div>
+        <div class="service-icon"><i class="ph-fill ph-trophy"></i></div>
+        <h3 class="service-title">Showpieces &amp; sugar art</h3>
+        <p class="service-body">Competition-grade pulled-sugar, isomalt, and chocolate sculpture. Built for galas, openings, and the centre of any buffet.</p>
+        <div class="service-foot">
+          <span class="service-price">On enquiry</span>
+          <button class="service-arrow" data-nav="contact" aria-label="Enquire"><i class="ph-thin ph-arrow-up-right"></i></button>
+        </div>
+      </article>
+      <article class="service-card tone-pistachio">
+        <div class="service-num">02</div>
+        <div class="service-icon"><i class="ph-fill ph-cake"></i></div>
+        <h3 class="service-title">Celebration cakes</h3>
+        <p class="service-body">Character cakes, fondant figures, and themed builds — Wonka, carousels, fireplaces, trains. Designed in conversation.</p>
+        <div class="service-foot">
+          <span class="service-price">From $480</span>
+          <button class="service-arrow" data-nav="contact" aria-label="Enquire"><i class="ph-thin ph-arrow-up-right"></i></button>
+        </div>
+      </article>
+      <article class="service-card tone-berry">
+        <div class="service-num">03</div>
+        <div class="service-icon"><i class="ph-fill ph-circle-half"></i></div>
+        <h3 class="service-title">Mirror-glaze entremets</h3>
+        <p class="service-body">Glossy, saturated entremets in lemon, pistachio, raspberry, and dark chocolate. Sold in dozens for resort dining and weddings.</p>
+        <div class="service-foot">
+          <span class="service-price">From $9 / piece</span>
+          <button class="service-arrow" data-nav="contact" aria-label="Enquire"><i class="ph-thin ph-arrow-up-right"></i></button>
+        </div>
+      </article>
+      <article class="service-card tone-ocean">
+        <div class="service-num">04</div>
+        <div class="service-icon"><i class="ph-fill ph-cookie"></i></div>
+        <h3 class="service-title">Macarons &amp; petits fours</h3>
+        <p class="service-body">Boxes for gifting, dessert tables, or amenity drops — bright colours, clean shells, generous filling.</p>
+        <div class="service-foot">
+          <span class="service-price">From $42 / box</span>
+          <button class="service-arrow" data-nav="contact" aria-label="Enquire"><i class="ph-thin ph-arrow-up-right"></i></button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="contact-grid" id="contact-grid">
+      <div class="contact-text">
+        <p class="eyebrow contact-eyebrow">Commission a piece</p>
+        <h2>Tell me about <span class="script">the moment</span> you're <em>building toward</em>.</h2>
+        <p class="contact-lead">
+          A wedding centrepiece, a banquet showpiece, an amenity box for arriving
+          guests — a few lines about the date, the size, and the vibe is all I need.
+        </p>
+        <ul class="contact-meta">
+          <li><i class="ph-thin ph-map-pin"></i> OBLU Sangeli &amp; Helengeli, Maldives</li>
+          <li><i class="ph-thin ph-envelope-simple"></i> roshan@chefroshan.com</li>
+          <li><i class="ph-thin ph-instagram-logo"></i> @chef.roshan.rakitha</li>
+          <li><i class="ph-thin ph-clock"></i> Replies within 24 hours, Maldives time</li>
+        </ul>
+      </div>
+
+      <form class="contact-form" id="contact-form">
+        <div class="field">
+          <label class="label">Your name</label>
+          <input required name="name" placeholder="Aria Fernando"/>
+        </div>
+        <div class="field">
+          <label class="label">For the date of</label>
+          <input type="text" name="date" placeholder="14 June 2026"/>
+        </div>
+        <div class="field">
+          <label class="label">What you're imagining</label>
+          <select name="kind">
+            <option value="" disabled selected>Choose one…</option>
+            <option>A showpiece for an event</option>
+            <option>A celebration cake</option>
+            <option>Mirror-glaze entremets</option>
+            <option>Macarons / petits fours</option>
+            <option>Something else</option>
+          </select>
+        </div>
+        <div class="field">
+          <label class="label">A note to the kitchen</label>
+          <textarea rows="4" name="note" placeholder="Sketch the scene — guests, theme, scale, anything that helps."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">
+          Send the note <i class="ph-thin ph-arrow-up-right btn-icon"></i>
+        </button>
+      </form>
+    </div>
+
+    <div class="contact-thanks" id="contact-thanks" hidden>
+      <p class="eyebrow contact-eyebrow">Your note is in the kitchen</p>
+      <h2>Thank you — <em>I'll write back soon</em>.</h2>
+      <p class="contact-lead">I read every note, usually within a day.</p>
+      <span class="script">— Roshan</span>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-mark">
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <span class="nav-mark-script">Chef</span>
+          <span class="nav-mark-name">Roshan Rakitha<small>OBLU · Maldives</small></span>
+        </div>
+        <p class="footer-tag">Showpieces, character cakes, and mirror-glaze pastry — for the moment a guest walks in and stops.</p>
+      </div>
+      <div class="footer-col">
+        <p class="eyebrow">Find me</p>
+        <p class="footer-line">OBLU Sangeli<br/>OBLU Helengeli<br/>Maldives</p>
+      </div>
+      <div class="footer-col">
+        <p class="eyebrow">Write</p>
+        <p class="footer-line"><a href="mailto:roshan@chefroshan.com">roshan@chefroshan.com</a></p>
+        <p class="footer-line"><a href="https://instagram.com/chef.roshan.rakitha">@chef.roshan.rakitha</a></p>
+        <p class="footer-line"><a href="#contact" data-nav="contact">+960 · on request</a></p>
+      </div>
+      <div class="footer-col">
+        <p class="eyebrow">Sections</p>
+        <p class="footer-line"><a href="#portfolio" data-nav="portfolio">Portfolio</a></p>
+        <p class="footer-line"><a href="#services" data-nav="services">Services</a></p>
+        <p class="footer-line"><a href="#about" data-nav="about">About</a></p>
+        <p class="footer-line"><a href="#contact" data-nav="contact">Commission</a></p>
+      </div>
+    </div>
+    <div class="footer-base">
+      <span>© 2026 Chef Roshan Rakitha. All rights reserved.</span>
+      <span class="footer-dots">
+        <span style="background: #F5C842;"></span>
+        <span style="background: #8DC73F;"></span>
+        <span style="background: #2BB3C0;"></span>
+        <span style="background: #E94560;"></span>
+        <span style="background: #8B5CF6;"></span>
+      </span>
+    </div>
+  </footer>
+
+  <!-- Portfolio overlay (template-cloned at runtime) -->
+  <div class="pf-overlay" id="pf-overlay" hidden>
+    <div class="pf-overlay-inner" role="dialog" aria-modal="true">
+      <button class="pf-close" id="pf-close" aria-label="Close"><i class="ph-thin ph-x"></i></button>
+      <div class="pf-overlay-img"><img id="pf-overlay-img" src="" alt=""/></div>
+      <div class="pf-overlay-text">
+        <span class="pf-overlay-cat" id="pf-overlay-cat"></span>
+        <h3 class="pf-overlay-title" id="pf-overlay-title"></h3>
+        <p class="lead">A one-off piece, designed for the room it's walking into.</p>
+        <p style="color: var(--fg-muted);">
+          Made over several days — tempering, modelling, glazing, finishing.
+          Available on commission for events, banquets, and private celebrations.
+        </p>
+        <a class="btn btn-primary" href="#contact" data-nav="contact" id="pf-overlay-cta" style="align-self: flex-start; margin-top: 12px;">
+          Commission something like this <i class="ph-thin ph-arrow-up-right btn-icon"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
 </body>
-
 </html>
